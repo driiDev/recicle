@@ -25,7 +25,7 @@
         <input type="email" name="email" id="email" placeholder="Email" required> <br>
         <input type="password" name="password" id="password" size="15" placeholder="Senha" required onchange="onChange()"> <br>
         <input type="password" name="confirm" id="confirm" size="15" placeholder="Confirmar Senha" required onchange="onChange()"> <br>
-        <input type="submit">
+        <input type="submit" name="register">
     </form>
 
     <a href="index.php">Já tem conta?</a>

@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $message = $usuario->autenticarUsuario($email, $password);
 
-        if ($message === "Login bem-sucedido") {
+        if ($message === "Login realizado") {
             $_SESSION["loggedin"] = true;
             header("Location: site.php");
             exit;

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $usuario = new Usuario($conn);
     if ($usuario->cadastrarUsuario($name, $email, $password)) {
-        echo "Usuário criado com sucesso";
+        echo "Usuário criado com sucesso.";
     } else {
         echo "Erro ao criar o usuário.";
     }
