@@ -31,6 +31,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <p>Deseja cadastrar uma meta? <a href="metas.php">Clique aqui</a></p>
     
 </div>
+<br>
+<div>
+    <h2>CADASTRO DE RESÍDUOS</h2>
+    <p>Deseja cadastrar um resíduo? <a href="residuos.php">Clique aqui</a></p>
+    
+</div>
 
 <form method="post" action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 <input type="submit" name="logout" value="logout">

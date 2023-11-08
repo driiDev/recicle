@@ -6,7 +6,7 @@
     <title>Resíduos</title>
 </head>
 <body>
-<h1>Cadastro de Resíduo Reciclavel</h1>
+<h1>Cadastro de Resíduo Descartado</h1>
     <form action="cadResiduos.php" method="post">
         <input type="text" name="tiporesiduo" id="tiporesiduo" placeholder="Tipo de Resíduo" required> <br>
         <input type="number" name="qtd" id="qtd" placeholder="Quantidade" required> <br>

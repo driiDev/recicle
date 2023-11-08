@@ -10,7 +10,8 @@
     <form action="cadMetas.php" method="post">
         <input type="text" name="titulo" id="titulo" placeholder="Título" required> <br>
         <input type="number" name="qtd" id="qtd" placeholder="Quantidade" required> <br>
-        <input type="date" name="periodo" id="periodo" placeholder="Período">
+        <input type="date" name="data_inicial" id="data_inicial" placeholder="Período inicial" required>
+        <input type="date" name="data_final" id="data_final" placeholder="Período final" required>
         <input type="submit" value="Cadastrar">
     </form>
     

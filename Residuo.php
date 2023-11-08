@@ -7,7 +7,7 @@ class Residuo {
     }
 
     public function cadastrarResiduo($tiporesiduo, $qtd, $destinacao) {
-        $sql = "INSERT INTO residuos (titulo, qtd, periodo) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO residuos (tiporesiduo, qtd, destinacao) VALUES (?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
         $stmt->bind_param("sss", $tiporesiduo, $qtd, $destinacao);
 
