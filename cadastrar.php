@@ -27,7 +27,7 @@
         <input type="password" name="confirm" id="confirm" size="15" placeholder="Confirmar Senha" required onchange="onChange()"> <br>
         <input type="submit" name="register">
     </form>
-
+    <br>
     <a href="index.php">Já tem conta?</a>
 
     

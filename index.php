@@ -1,8 +1,12 @@
 <?php
 session_start();
 
+//$_SESSION["loggedin"] = true;
+//header("location: site.php");
+
 require_once "config.php"; // Configuração do banco de dados
 include 'Usuario.php';
+
 
 $usuario = new Usuario($conn);
 
@@ -33,6 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <script>
+        // Verifica se o usuário está logado e redireciona para site.php
+        <?php if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true): ?>
+            window.location.href = "site.php";
+        <?php endif; ?>
+    </script>
 </head>
 <body>
     <h1>Login</h1>
@@ -43,7 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" name="login" value="Entrar">
     </form>
     <br>
-    <a href="cadastrar.php">Ainda não tem conta?</a>
+    <a href="cadastrar.php">Ainda não tem conta?</a><br>
+    <a href="login_cooperativa.php">É coopetariva?</a>
 
     <?php
     if (isset($message)) {

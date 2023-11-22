@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header("Location: index.php"); // Redireciona para a página de login
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,9 +20,15 @@
     <form action="cadResiduos.php" method="post">
         <input type="text" name="tiporesiduo" id="tiporesiduo" placeholder="Tipo de Resíduo" required> <br>
         <input type="number" name="qtd" id="qtd" placeholder="Quantidade" required> <br>
-        <input type="text" name="destinacao" id="destinacao" placeholder="Destinação">
+        <label for="destinacao">Destinação:</label>
+        <select name="destinacao" id="destinacao">
+            <option value="porta_a_porta">Porta a Porta</option>
+            <option value="ja_encaminhado">Já Encaminhado para Outra Destinação</option>
+        </select><br>        
         <input type="submit" value="Cadastrar">
     </form>
-    
+    <br>
+    <a href="site.php">Voltar</a>
+
 </body>
 </html>
