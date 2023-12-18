@@ -1,0 +1,175 @@
+* {
+    background-color: var(--secondary-color); 
+}
+
+.logo {
+    height: 125px;
+    width: 125px;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: auto; 
+}
+
+nav a{
+    color: var(--txt-color-dark);
+    font-size: 16px;
+    padding: 2px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer; 
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--button-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+header nav a:nth-child(2n-1) {
+    text-align: left;
+}
+
+.text {
+    color: var(--txt-color-dark);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 200;
+    font-family:'bevan', serif; 
+    color: var(--button-color);
+    text-align: center;
+    padding-top: 25px;
+}
+.title-residuo {
+    font-size: 28px;
+    font-weight: 200;
+    font-family:'bevan', serif; 
+    color: var(--button-color);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55vh;
+}
+.main-section-residuo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 58vh;
+}
+
+.img-principal {
+    width: 600px;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 5%;
+}
+
+.main-text {
+    font-family: 'Bevan', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 4%;
+    padding-top: 20px;
+}
+.main-text-residuos {
+    font-family: 'Bevan', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-bottom: 4%;
+    padding-top: 80px;
+}
+
+.recic-img {
+    width: 400px;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 5%;
+}   
+
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.topic-icon {
+  width: 50px;
+  height: 30px;
+  margin-right: 2px;
+}
+
+.topic-text {
+    font-family: 'Bevan', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+@media screen and (min-width: 48rem) {
+    header nav {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 48rem) {
+    header div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    header img, header nav {
+        margin: 0;
+    }
+}

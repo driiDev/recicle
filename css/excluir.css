@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    height: 100%;
+    margin: 0px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: var(--txt-color-light);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'bevan', serif;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.excluir-container {
+    height: 330px;
+    width: 50%;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px #949D97;
+    overflow: hidden;
+    align-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px ;
+    margin: 0 auto;
+}
+
+.form-listar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+}
+.form-title{
+    font-size: 18px;
+    font-weight: 200;
+    font-family:'bevan', serif; 
+    color: var(--button-color);
+    text-align: center;
+}
+.form-text {
+    color: var(--txt-color-dark);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    padding: 15px;
+
+    text-align: center;
+    
+}
+.form-button {
+    width: 110px;
+    height: 50px;
+    border-style: none;
+    border-radius: 60px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--txt-color-light);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'bevan', serif;
+    margin-left: 10px; /* Adiciona margem à esquerda */
+}
+.button{
+    gap: 5px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form-button:hover {
+    text-decoration: underline;
+}
+.form-input {
+    width: 150px;
+    height: 10px; 
+    border-radius: 10px;
+    padding: 10px 10px 20px;
+    border-style: none;
+    background-color: var(--txt-color-light);
+    margin: 0 auto; 
+}
